@@ -1,0 +1,114 @@
+.frame-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 55.4px;
+    text-align: left;
+    font-size: 27.44px;
+    color: #006400; /* darkgreen */
+    font-family: 'Poppins', sans-serif;
+    margin-top: 6rem;
+  }
+  
+  .frame-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 22.9px;
+  }
+  
+  .frame-section img {
+    width: 116.4px;
+    height: 73.6px;
+  }
+  
+  .frame-section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+  }
+  
+  .frame-title {
+    width: 320.2px;
+    font-weight: 500;
+    text-transform: uppercase;
+    height: 33.2px;
+  }
+  
+  .frame-description {
+    width: 416.2px;
+    font-size: 17.15px;
+    text-transform: capitalize;
+    color: #000; /* black */
+    text-align: center;
+    height: 105.2px;
+  }
+  
+  .frame-divider {
+    width: 1.1px;
+    border-right: 1.1px solid #696969; /* dimgray */
+    height: 239.1px;
+  }
+  
+  .frame-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 19.4px;
+    text-align: center;
+  }
+  
+  .frame-center img {
+    width: 56.3px;
+    height: 73px;
+  }
+  
+  .frame-center-title {
+    width: 374px;
+    font-weight: 500;
+    text-transform: uppercase;
+    height: 33px;
+  }
+  
+  .frame-center-description {
+    width: 351px;
+    font-size: 17.15px;
+    text-transform: capitalize;
+    color: #000; /* black */
+    white-space: pre-wrap;
+    height: 92.6px;
+  }
+  
+  .frame-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 18.3px;
+  }
+  
+  .frame-right img {
+    width: 73.1px;
+    height: 67.9px;
+  }
+  
+  .frame-right-title {
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  
+  .frame-right-description {
+    width: 277.9px;
+    font-size: 17.15px;
+    text-transform: capitalize;
+    color: #000; /* black */
+    text-align: center;
+    height: 52.6px;
+  }

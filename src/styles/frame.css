@@ -1,0 +1,33 @@
+.indias-premier-container {
+    width: full;
+    position: relative;
+    color: #696969; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-family: 'Rounded Mplus 1c', sans-serif;
+    margin-top: 6rem;
+    padding:3rem;
+  }
+  
+  .indias-premier-content {
+    width: 100%;
+  }
+  
+  .indias-premier-title {
+    margin: 0;
+    line-height: 100%;
+    text-transform: uppercase;
+    font-weight: 800; 
+    color: #585858;
+    margin-bottom: 0.8rem;
+  }
+  
+  .indias-premier-description {
+    margin: 0;
+    font-size: 20px;
+    line-height: 150%;
+    text-transform: capitalize;
+  }
