@@ -1,0 +1,58 @@
+.car-table {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.table-header {
+  background-color: #4b6043;
+  color: white;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.table-header th {
+  padding: 20px;
+  border: 1px solid #ffffff;
+}
+
+.table-body td {
+  padding: 15px 20px;
+  border: 1px solid #a5d6a7;
+  background-color: #e8f5e9;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.car-type-cell {
+  background-color: #c8e6c9 !important;
+  font-weight: 500;
+}
+
+.ideal-for-cell {
+  width: 35%;
+}
+
+.passengers-cell,
+.fare-cell {
+  text-align: center;
+  width: 120px;
+}
+
+@media (max-width: 768px) {
+  .car-table {
+    font-size: 14px;
+  }
+
+  .table-header th {
+    padding: 15px 10px;
+    font-size: 18px;
+  }
+
+  .table-body td {
+    padding: 10px;
+  }
+}

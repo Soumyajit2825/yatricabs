@@ -1,0 +1,108 @@
+.footer-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 13px;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background-color: black;
+  padding: 3rem;
+}
+
+.footer-logo {
+  width: 184.9px;
+  height: 60px;
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+.nav-links {
+  width: 408px;
+  height: 18px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.nav-item {
+  cursor: pointer;
+}
+
+.newsletter-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.newsletter-title {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.newsletter-form {
+  width: 340px;
+  height: 25px;
+  position: relative;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 273px;
+  height: 25px;
+}
+
+.input-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 273px;
+  height: 25px;
+  border-radius: 12px;
+  background-color: #dcdcdc;
+}
+
+.email-input {
+  position: absolute;
+  top: 9px;
+  left: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  width: 67px;
+  height: 8px;
+  border: none;
+  background: transparent;
+  color: #696969;
+  padding:5px;
+}
+
+.submit-button {
+  position: absolute;
+  top: -1px;
+  left: 249px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0 12px 12px 0;
+  background-color: black;
+  border: 1px solid white;
+  width: 92px;
+  height: 27px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright {
+  width: 262px;
+  font-size: 10px;
+  line-height: 150%;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
