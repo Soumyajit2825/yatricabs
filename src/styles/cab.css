@@ -1,0 +1,133 @@
+.cab-container {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(20px, 3vw, 40px);
+  text-align: center;
+  font-size: clamp(36px, 4vw, 64px);
+  color: #006400;
+  font-family: 'Poppins', sans-serif;
+  padding: clamp(2rem, 3vw, 4rem);
+}
+
+.cab-title {
+  width: clamp(600px, 80vw, 995px);
+  position: relative;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  font-weight: 600;
+  height: auto;
+  min-height: 71px;
+}
+
+.features-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(12px, 1.5vw, 18px);
+  text-align: left;
+  font-size: clamp(16px, 1.5vw, 20px);
+  color: #000;
+}
+
+.features-list {
+  width: clamp(350px, 30vw, 481px);
+  position: relative;
+  height: auto;
+  min-height: 306px;
+}
+
+.features-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 16px;
+  background-color: #f5f5f5;
+  border: 1px solid #696969;
+  width: 100%;
+  height: 100%;
+}
+
+.features-list ul {
+  list-style-type: disc;
+  margin: 0;
+  padding-left: clamp(20px, 2vw, 27px);
+}
+
+.feature-item {
+  position: relative;
+  left: 12px;
+  text-transform: capitalize;
+  width: clamp(300px, 28vw, 460px);
+}
+
+.cab-image {
+  width: clamp(300px, 35vw, 428px);
+  border-radius: 15px;
+  height: auto;
+  aspect-ratio: 1.42;
+  object-fit: cover;
+}
+
+.description {
+  width: clamp(800px, 90vw, 1407px);
+  position: relative;
+  font-size: clamp(24px, 2.5vw, 36px);
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #808080;
+}
+
+.description-highlight {
+  color: #006400;
+  font-weight: 600;
+}
+
+/* Desktop Breakpoints */
+@media screen and (min-width: 1921px) {
+  .cab-container {
+    padding: 4rem calc((100vw - 1920px) / 2);
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .cab-container {
+    gap: 30px;
+  }
+
+  .feature-item {
+    left: 10px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .cab-container {
+    padding: 2rem;
+    gap: 25px;
+  }
+
+  .features-container {
+    gap: 12px;
+  }
+
+  .feature-item {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .cab-container {
+    padding: 1.5rem;
+  }
+
+  .features-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

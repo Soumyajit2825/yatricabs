@@ -1,0 +1,163 @@
+.booking-container {
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.85); 
+  backdrop-filter: blur(1px);
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  padding: clamp(15px, 2vw, 20px);
+  width: min(693px, 100%);
+  height: auto;
+  min-height: 360px;
+}
+
+/* Service Type Tabs */
+.service-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1rem, 2vw, 2.3rem);
+  margin-bottom: clamp(15px, 2vw, 20px);
+}
+
+.service-tab {
+  padding: clamp(6px, 1vw, 8px) clamp(10px, 2vw, 20px);
+  border: 2px solid #216900;
+  width: auto;
+  height: clamp(2.5rem, 3vw, 3.125rem);
+  border-radius: 8px;
+  color: #A0A0A0;
+  font-size: clamp(18px, 2vw, 26.62px);
+  font-weight: 500;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  white-space: nowrap;
+}
+
+/* Trip Type Tabs */
+.trip-tabs {
+  display: flex;
+  gap: clamp(2rem, 4vw, 6.25rem);
+  margin-bottom: clamp(20px, 2vw, 30px);
+  align-items: center;
+  justify-content: center;
+}
+
+.trip-tab {
+  padding: clamp(4px, 1vw, 6px) clamp(10px, 1.5vw, 16px);
+  border: 1.5px solid #216900;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  height: clamp(2rem, 2.5vw, 2.68rem);
+  width: auto;
+  color: #A0A0A0;
+  font-size: clamp(16px, 1.5vw, 20px);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Form Layout */
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(10px, 1.5vw, 15px);
+  background: transparent;
+  height: 100%;
+}
+
+.form-row {
+  display: flex;
+  gap: clamp(10px, 1.5vw, 15px);
+  align-items: center;
+}
+
+.input-group {
+  flex: 1;
+}
+
+.input-label {
+  font-size: clamp(11px, 1vw, 13px);
+  color: #666;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.input-field {
+  width: 100%;
+  padding: clamp(6px, 1vw, 8px) 0;
+  border: none;
+  font-size: clamp(12px, 1.2vw, 14px);
+  border-bottom: 1px solid black;
+  background: transparent;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+/* Submit Button */
+.explore-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: clamp(15px, 2vw, 20px);
+}
+
+.explore-button {
+  background: #216900;
+  color: white;
+  padding: clamp(10px, 1.5vw, 12px) clamp(30px, 3vw, 40px);
+  border-radius: 6.6px;
+  border: 1.32px solid #216900;
+  font-size: clamp(18px, 1.8vw, 22px);
+  font-weight: 500;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0px 5px 29px rgba(0, 0, 0, 0.17);
+  width: auto;
+  min-width: clamp(12rem, 15vw, 15rem);
+}
+
+/* Desktop Breakpoints */
+@media screen and (min-width: 1921px) {
+  .booking-container {
+    max-width: 800px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .booking-container {
+    padding: 15px;
+  }
+  
+  .service-tab {
+    font-size: 22px;
+    height: 2.8rem;
+  }
+  
+  .trip-tab {
+    font-size: 18px;
+    height: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .service-tabs {
+    gap: 1.5rem;
+  }
+  
+  .trip-tabs {
+    gap: 4rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .booking-container {
+    width: 85%;
+  }
+  
+  .explore-button {
+    font-size: 18px;
+    padding: 10px 30px;
+  }
+}

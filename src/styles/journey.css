@@ -1,0 +1,111 @@
+.journey-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  font-size: clamp(28px, 2.5vw, 36px);
+  color: #696969;
+  font-family: 'Rounded Mplus 1c', sans-serif;
+  padding: clamp(2rem, 3vw, 3rem);
+  gap: clamp(1rem, 2vw, 2rem);
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.journey-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: clamp(20px, 2vw, 26px);
+  width: clamp(500px, 45vw, 728px);
+}
+
+.journey-title {
+  width: 100%;
+  font-weight: 800;
+  text-transform: uppercase;
+  min-height: 92.6px;
+  margin-bottom: clamp(2rem, 3vw, 3rem);
+  font-size: clamp(28px, 2.5vw, 36px);
+  line-height: 1.2;
+}
+
+.journey-title-green {
+  color: #006400;
+}
+
+.journey-description {
+  width: 100%;
+  font-size: clamp(16px, 1.5vw, 20px);
+  text-transform: capitalize;
+  min-height: 188px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+.journey-description p {
+  margin: 0;
+}
+
+.read-more {
+  font-weight: 800;
+}
+
+.journey-image {
+  width: clamp(400px, 40vw, 665px);
+  height: auto;
+  aspect-ratio: 1.624;
+  object-fit: cover;
+}
+
+/* Desktop Breakpoints */
+@media screen and (min-width: 1921px) {
+  .journey-container {
+    padding: 3rem calc((100vw - 1920px) / 2);
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .journey-container {
+    padding: 2.5rem;
+    gap: 1.5rem;
+  }
+
+  .journey-content {
+    gap: 20px;
+  }
+
+  .journey-title {
+    min-height: 80px;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .journey-container {
+    padding: 2rem;
+    gap: 1rem;
+  }
+
+  .journey-content {
+    width: clamp(400px, 45vw, 500px);
+  }
+
+  .journey-image {
+    width: clamp(350px, 40vw, 400px);
+  }
+
+  .journey-description {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .journey-container {
+    padding: 1.5rem;
+  }
+}
