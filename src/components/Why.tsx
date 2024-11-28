@@ -28,7 +28,7 @@ export default function Why() {
           <Image className="img" src={Vector} alt="fast response" width={41} height={72} />
           <div className="feature-content">
             <div className="feature-title">Fast response time</div>
-            <div className="img1">
+            <div className="feature-description">
               Experience the Best Car Rental Service with Driver for Local or
               Outstation Trips. Enjoy prompt response times and seamless car
               hire service, ensuring you get on the road quickly

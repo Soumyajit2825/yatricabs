@@ -1,6 +1,6 @@
 .hero {
   font: bold;
-  width: 100%;
+  width: 100vw;
   height: auto;
   overflow: hidden;
 }
@@ -72,5 +72,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 1440px) {
+  .hero-content {
+    gap: 2rem;
+  }
 }
 

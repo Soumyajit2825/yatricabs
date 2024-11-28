@@ -1,41 +1,46 @@
 .cab-container {
   position: relative;
   width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: clamp(20px, 3vw, 40px);
   text-align: center;
-  font-size: 64px;
+  font-size: clamp(36px, 4vw, 64px);
   color: #006400;
   font-family: 'Poppins', sans-serif;
+  padding: clamp(2rem, 3vw, 4rem);
 }
 
 .cab-title {
-  width: 995px;
+  width: clamp(600px, 80vw, 995px);
   position: relative;
   letter-spacing: 0.01em;
   text-transform: uppercase;
   font-weight: 600;
-  height: 71px;
+  height: auto;
+  min-height: 71px;
 }
 
 .features-container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
-  gap: 18px;
+  justify-content: center;
+  gap: clamp(12px, 1.5vw, 18px);
   text-align: left;
-  font-size: 20px;
+  font-size: clamp(16px, 1.5vw, 20px);
   color: #000;
 }
 
 .features-list {
-  width: 481px;
+  width: clamp(350px, 30vw, 481px);
   position: relative;
-  height: 306px;
+  height: auto;
+  min-height: 306px;
 }
 
 .features-box {
@@ -49,37 +54,32 @@
   height: 100%;
 }
 
+.features-list ul {
+  list-style-type: disc;
+  margin: 0;
+  padding-left: clamp(20px, 2vw, 27px);
+}
+
 .feature-item {
-  position: absolute;
+  position: relative;
   left: 12px;
   text-transform: capitalize;
-  width: 460px;
+  width: clamp(300px, 28vw, 460px);
 }
-
-.feature-item ul {
-  margin: 0;
-  padding-left: 27px;
-  list-style-type: disc;
-}
-
-.feature-1 { top: 33px; }
-.feature-2 { top: 84px; }
-.feature-3 { top: 134px; }
-.feature-4 { top: 185px; }
-.feature-5 { top: 236px; }
 
 .cab-image {
-  width: 428px;
+  width: clamp(300px, 35vw, 428px);
   border-radius: 15px;
-  height: 301px;
+  height: auto;
+  aspect-ratio: 1.42;
   object-fit: cover;
 }
 
 .description {
-  width: 1407px;
+  width: clamp(800px, 90vw, 1407px);
   position: relative;
-  font-size: 36px;
-  line-height: 54px;
+  font-size: clamp(24px, 2.5vw, 36px);
+  line-height: 1.5;
   text-transform: uppercase;
   color: #808080;
 }
@@ -87,4 +87,47 @@
 .description-highlight {
   color: #006400;
   font-weight: 600;
+}
+
+/* Desktop Breakpoints */
+@media screen and (min-width: 1921px) {
+  .cab-container {
+    padding: 4rem calc((100vw - 1920px) / 2);
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .cab-container {
+    gap: 30px;
+  }
+
+  .feature-item {
+    left: 10px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .cab-container {
+    padding: 2rem;
+    gap: 25px;
+  }
+
+  .features-container {
+    gap: 12px;
+  }
+
+  .feature-item {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .cab-container {
+    padding: 1.5rem;
+  }
+
+  .features-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

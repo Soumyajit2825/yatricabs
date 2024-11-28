@@ -4,26 +4,27 @@
   margin: 0 auto;
   border-collapse: collapse;
   font-family: Arial, sans-serif;
+  padding: clamp(1rem, 2vw, 3rem);
 }
 
 .table-header {
   background-color: #4b6043;
   color: white;
   text-align: left;
-  font-size: 24px;
+  font-size: clamp(18px, 2vw, 24px);
   font-weight: 600;
 }
 
 .table-header th {
-  padding: 20px;
+  padding: clamp(15px, 2vw, 20px);
   border: 1px solid #ffffff;
 }
 
 .table-body td {
-  padding: 15px 20px;
+  padding: clamp(12px, 1.5vw, 20px);
   border: 1px solid #a5d6a7;
   background-color: #e8f5e9;
-  font-size: 16px;
+  font-size: clamp(14px, 1.2vw, 16px);
   line-height: 1.4;
 }
 
@@ -33,26 +34,69 @@
 }
 
 .ideal-for-cell {
-  width: 35%;
+  width: clamp(30%, 35%, 40%);
 }
 
 .passengers-cell,
 .fare-cell {
   text-align: center;
-  width: 120px;
+  width: clamp(100px, 10vw, 120px);
 }
 
-@media (max-width: 768px) {
+/* Desktop Breakpoints */
+@media screen and (min-width: 1921px) {
   .car-table {
-    font-size: 14px;
+    max-width: 1800px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .table-header {
+    font-size: 20px;
   }
 
   .table-header th {
-    padding: 15px 10px;
+    padding: 18px 15px;
+  }
+
+  .table-body td {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .car-table {
+    padding: 1.5rem;
+  }
+
+  .table-header {
     font-size: 18px;
   }
 
   .table-body td {
-    padding: 10px;
+    font-size: 14px;
+  }
+
+  .ideal-for-cell {
+    width: 35%;
+  }
+
+  .passengers-cell,
+  .fare-cell {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .car-table {
+    padding: 1rem;
+  }
+
+  .table-header th {
+    padding: 15px 10px;
+  }
+
+  .table-body td {
+    padding: 12px 10px;
   }
 }

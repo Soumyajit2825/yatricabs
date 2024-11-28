@@ -4,33 +4,31 @@
   justify-content: center;
   align-items: center;
   background-color: #D9D9D9;
-  padding: 20px 20px;
+  padding: clamp(15px, 2vw, 20px);
   border-radius: 50px;
-  margin: 20px 20px;
+  margin: 20px auto;
   text-align: center;
   z-index: 50;
   position: absolute;
-  bottom: -50px; 
-  /* transform: translateX(-50%); */
-  width: 95%;
+  bottom: -3rem;
   overflow-x: hidden;
 }
 
 .section {
   flex: 1;
-  padding: 0 20px;
+  padding: 0 clamp(10px, 2vw, 20px);
 }
 
 .title {
-  font-size: 42px;
-  font-weight:500;
+  font-size: clamp(24px, 2.5vw, 42px);
+  font-weight: 500;
   color: #000;
   margin: 0 0 8px 0;
 }
 
 .subtitle {
-  font-size: 26px;
-  font-weight:lighter;
+  font-size: clamp(16px, 1.5vw, 26px);
+  font-weight: lighter;
   color: #000;
   margin: 0;
 }
@@ -42,11 +40,11 @@
   align-items: center;
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
-  padding: 0 20px;
+  padding: 0 clamp(10px, 2vw, 20px);
 }
 
 .downloadTitle {
-  font-size: 24px;
+  font-size: clamp(18px, 1.8vw, 24px);
   font-weight: bold;
   color: #000;
   margin: 0 0 16px 0;
@@ -54,13 +52,14 @@
 
 .storeButtons {
   display: flex;
-  gap: 10px;
+  gap: clamp(8px, 1vw, 10px);
   justify-content: center;
 }
 
 .storeLink {
   display: block;
   transition: transform 0.2s ease;
+  width: clamp(100px, 10vw, 135px);
 }
 
 .storeLink:hover {
@@ -69,31 +68,48 @@
 
 .storeImage {
   display: block;
+  width: 100%;
   height: auto;
 }
 
-@media (max-width: 768px) {
+/* Desktop Breakpoints */
+@media screen and (min-width: 1921px) {
   .banner {
-    flex-direction: column;
-    padding: 20px;
-    gap: 20px;
+    max-width: 1800px;
+    bottom: -3rem;
   }
+}
 
-  .downloadSection {
-    border-left: none;
-    border-right: none;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    padding: 20px 0;
-    width: 100%;
+@media screen and (max-width: 1440px) {
+  .banner {
+    width: 90%;
+    bottom: -3rem;
   }
+}
 
+@media screen and (max-width: 1200px) {
+  .banner {
+    width: 85%;
+    bottom: 4rem;
+  }
+  
   .section {
-    padding: 0;
+    padding: 0 15px;
   }
+}
 
-  .storeButtons {
-    flex-direction: column;
-    align-items: center;
+@media screen and (max-width: 1024px) {
+
+  .banner {
+    width: 85%;
+    bottom: 4rem;
+  }
+  
+  .title {
+    font-size: clamp(20px, 2vw, 24px);
+  }
+  
+  .subtitle {
+    font-size: clamp(14px, 1.5vw, 16px);
   }
 }

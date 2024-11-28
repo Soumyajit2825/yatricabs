@@ -3,8 +3,24 @@
   flex-direction: column;
   padding-top: 100px;
   scroll-behavior: smooth;
+  /* max-width: 100vw;
+  overflow-x: hidden; */
 }
 
 .app > * {
   width: 100%;
 }
+
+/* Common breakpoints for all components */
+/* @media screen and (min-width: 1921px) {
+  .app {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .app {
+    padding-top: 80px;
+  }
+} */
