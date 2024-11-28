@@ -2,7 +2,7 @@
 import "../styles/footer.css";
 import Image from "next/image";
 import Logo from "../../public/logo.svg";
-import Vector from "../../public/vector1.svg";
+import Vector1 from "../../public/Vector1.svg";
 
 export default function Footer() {
   return (
@@ -37,7 +37,7 @@ export default function Footer() {
             </div>
             <button className="submit-button">
               <Image 
-                src={Vector} 
+                src={Vector1} 
                 alt="Submit" 
                 width={20}
                 height={12}
