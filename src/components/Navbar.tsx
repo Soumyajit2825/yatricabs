@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Logo from "../../public/logo.svg";
 import Contact from "../../public/contacts.svg";
@@ -17,14 +19,14 @@ const Navbar = () => {
           <li className="nav_item2">
             <Image src={Contact} alt="contact" />
           </li>
-          <div className="profile">
-            <li className="nav_item3">
-              <Image src={Arrow} alt="arrow" />
-            </li>
-            <li className="nav_item4">
-              <ProfileCircle color="black" variant="Outline" size={30} />
-            </li>
-          </div>
+          <li className="nav_item3">
+            <Image src={Arrow} alt="arrow" />
+            {/* <p className="text">Download App</p> */}
+          </li>
+          <li className="nav_item4">
+            <ProfileCircle color="black" variant="Outline" size={30} />
+            {/* <p className="text">Hi Ravi!</p> */}
+          </li>
         </ul>
       </nav>
     </header>

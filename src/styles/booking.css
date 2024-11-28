@@ -1,0 +1,154 @@
+.booking-container {
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.85); 
+  backdrop-filter: blur(1px);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  z-index: 2;
+  padding: 20px;
+  width: 693px;
+  height: 360px;
+}
+
+/* Service Type Tabs */
+.service-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.3rem;
+  margin-bottom: 20px;
+}
+
+.service-tab {
+  padding: 8px 20px;
+  border: 2px solid #216900;
+  width: auto;
+  height: 3.125rem;
+  border-radius: 8px;
+  color: #A0A0A0;
+  font-size: 26.62px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+  background-color: #FFFFFF;
+}
+
+.service-tab.active {
+  background: #216900;
+  color: white;
+}
+
+/* Trip Type Tabs */
+.trip-tabs {
+  display: flex;
+  gap: 6.25rem;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.trip-tab {
+  padding: 6px 16px;
+  border: 1.5px solid #216900;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  height: 2.68rem;
+  width: auto;
+  color: #A0A0A0;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.trip-tab.active {
+  background: #216900;
+  color: white;
+}
+
+/* Form Layout */
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: transparent;
+  height: 100%;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.input-group {
+  flex: 1;
+  /* position: relative; */
+}
+
+.input-label {
+  font-size: 13px;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  font-size: 14px;
+  border-bottom: 1px solid black;
+  background: transparent;
+  padding: 8px 0;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s;
+  margin-bottom: 6px;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #216900;
+  border-bottom: 1px solid #000;
+}
+
+/* Swap Button */
+.swap-button {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+/* Submit Button */
+.explore-button {
+  background: #216900;
+  color: white;
+  padding: 12px 40px;
+  border-radius: 6.6px;
+  border: 1.32px solid #216900;
+  font-size: 22px;
+  font-weight: 500;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0px 5px 29px rgba(0, 0, 0, 0.17);
+  width: auto;
+  min-width: 15rem;
+  margin-bottom: 10px;
+
+}
+
+.explore-button:hover {
+  background: #216900;
+}
+
+.explore-button-container {
+  display: flex;
+  justify-content: center;
+}
