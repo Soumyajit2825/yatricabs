@@ -10,7 +10,7 @@
   text-align: center;
   z-index: 50;
   position: absolute;
-  bottom: -3rem;
+  /* bottom: -3rem; */
   overflow-x: hidden;
   backdrop-filter: blur(5px);
 }
@@ -77,21 +77,21 @@
 @media screen and (min-width: 1921px) {
   .banner {
     max-width: 1800px;
-    bottom: -3rem;
+    /* bottom: -3rem; */
   }
 }
 
 @media screen and (max-width: 1440px) {
   .banner {
     width: 90%;
-    bottom: -3rem;
+    /* bottom: -3rem; */
   }
 }
 
 @media screen and (max-width: 1200px) {
   .banner {
     width: 85%;
-    bottom: 4rem;
+    /* bottom: 4rem; */
   }
   
   .section {
@@ -103,7 +103,7 @@
 
   .banner {
     width: 85%;
-    bottom: 4rem;
+    /* bottom: 4rem; */
   }
   
   .title {
