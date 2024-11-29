@@ -12,6 +12,7 @@
   position: absolute;
   bottom: -3rem;
   overflow-x: hidden;
+  backdrop-filter: blur(5px);
 }
 
 .section {

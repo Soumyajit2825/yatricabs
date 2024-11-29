@@ -8,7 +8,6 @@
 .hero img {
   object-fit: cover;
   background-repeat: no-repeat;
-  overflow: hidden;
   height: 100%;
   width: 100%;
   z-index: 1;
@@ -34,18 +33,19 @@
   width: 100%;
   height: 100%;
   z-index: 2;
-  padding: 4rem;
+  padding: clamp(2rem, 4vw, 4rem);
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: clamp(2rem, 4vw, 4rem);
 }
 
 .hero-text {
   width: 540px;
   height: 175px;
   font-family: Poppins;
-  font-size: 47.52px;
+  font-size: clamp(32px, 3.5vw, 47.52px);
   font-style: normal;
   line-height: 57.024px;
   letter-spacing: 0.475px;
@@ -55,7 +55,15 @@
 
 .hero-left {
   flex: 1;
-  padding-right: 2rem;
+  max-width: 600px;
+  padding-right: clamp(1rem, 2vw, 2rem);
+}
+
+.hero-right {
+  flex: 1;
+  max-width: 700px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .hero-text-green {
@@ -68,15 +76,51 @@
   font-weight: 300;
 }
 
-.download{
+.download {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1921px) {
   .hero-content {
-    gap: 2rem;
+    max-width: 1920px;
+    margin: 0 auto;
   }
 }
 
+@media screen and (max-width: 1440px) {
+  .hero-content {
+    gap: 2rem;
+    padding: 2rem;
+  }
+  .hero-text {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .hero-content {
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+  
+  .hero-text {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero-content {
+    padding: 1rem;
+    gap: 1rem;
+  }
+  
+  .hero-left {
+    padding-right: 1rem;
+  }
+  
+  .hero-text {
+    font-size: 28px;
+  }
+}

@@ -6,7 +6,7 @@
   flex-direction: column;
   z-index: 2;
   padding: clamp(15px, 2vw, 20px);
-  width: min(693px, 100%);
+  width: min(600px, 100%);
   height: auto;
   min-height: 360px;
 }
@@ -133,17 +133,18 @@
 /* Desktop Breakpoints */
 @media screen and (min-width: 1921px) {
   .booking-container {
-    max-width: 800px;
+    max-width: 700px;
   }
 }
 
 @media screen and (max-width: 1440px) {
   .booking-container {
     padding: 15px;
+    width: 90%;
   }
 
   .service-tab {
-    font-size: 22px;
+    font-size: 20px;
     height: 2.8rem;
   }
 
@@ -155,17 +156,32 @@
 
 @media screen and (max-width: 1200px) {
   .service-tabs {
+    font-size: 18px;
+    padding: 6px 12px;
     gap: 1.5rem;
   }
 
   .trip-tabs {
     gap: 4rem;
   }
+
+  .booking-container {
+    width: 85%;
+  }
 }
 
 @media screen and (max-width: 1024px) {
   .booking-container {
-    width: 85%;
+    width: 100%;
+  }
+
+  .service-tabs {
+    gap: 0.5rem;
+  }
+  
+  .service-tab {
+    font-size: 16px;
+    padding: 6px 10px;
   }
 
   .explore-button {
