@@ -1,6 +1,6 @@
 .booking-container {
   border-radius: 15px;
-  background: rgba(255, 255, 255, 0.85); 
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(1px);
   display: flex;
   flex-direction: column;
@@ -26,12 +26,18 @@
   width: auto;
   height: clamp(2.5rem, 3vw, 3.125rem);
   border-radius: 8px;
-  color: #A0A0A0;
+  color: #a0a0a0;
   font-size: clamp(18px, 2vw, 26.62px);
   font-weight: 500;
   cursor: pointer;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.service-tab.active {
+  background-color: #216900;
+  color: #ffffff;
 }
 
 /* Trip Type Tabs */
@@ -48,13 +54,19 @@
   border: 1.5px solid #216900;
   border-radius: 8px;
   cursor: pointer;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   height: clamp(2rem, 2.5vw, 2.68rem);
   width: auto;
-  color: #A0A0A0;
+  color: #a0a0a0;
   font-size: clamp(16px, 1.5vw, 20px);
   font-weight: 500;
   white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.trip-tab.active {
+  background-color: #216900;
+  color: #ffffff;
 }
 
 /* Form Layout */
@@ -129,12 +141,12 @@
   .booking-container {
     padding: 15px;
   }
-  
+
   .service-tab {
     font-size: 22px;
     height: 2.8rem;
   }
-  
+
   .trip-tab {
     font-size: 18px;
     height: 2.4rem;
@@ -145,7 +157,7 @@
   .service-tabs {
     gap: 1.5rem;
   }
-  
+
   .trip-tabs {
     gap: 4rem;
   }
@@ -155,7 +167,7 @@
   .booking-container {
     width: 85%;
   }
-  
+
   .explore-button {
     font-size: 18px;
     padding: 10px 30px;
