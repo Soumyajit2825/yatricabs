@@ -1,7 +1,7 @@
 "use client";
-import "../styles/cab.css";
+import "./cab.css";
 import Image from "next/image";
-import CabImage from "../../public/red.svg";
+import CabImage from "../../../public/red.svg";
 
 export default function Cab() {
   return (

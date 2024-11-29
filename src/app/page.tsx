@@ -1,17 +1,17 @@
-"use client";
+"use client"
 
-import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
+import Navbar from "@/components/Navbar/Navbar";
+import Hero from "@/components/Hero/Hero";
 import "../styles/app.css";
-import About from "@/components/About";
-import Frame from "@/components/Frame";
-import Why from "@/components/Why";
-import CardTable from "@/components/CardTable";
-import Journey from "@/components/Journey";
-import Cab from "@/components/Cab";
-import Trip from "@/components/Trip";
-import Rental from "@/components/Rental";
-import Footer from "@/components/Footer";
+import About from "@/components/About/About";
+import Frame from "@/components/Frame/Frame";
+import Why from "@/components/Why/Why";
+import CardTable from "@/components/Car/CardTable";
+import Journey from "@/components/Journey/Journey";
+import Cab from "@/components/Cab/Cab";
+import Trip from "@/components/Trip/Trip";
+import Rental from "@/components/Rental/Rental";
+import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
   return (

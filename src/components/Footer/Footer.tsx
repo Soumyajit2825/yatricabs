@@ -1,8 +1,8 @@
 "use client";
-import "../styles/footer.css";
+import "./footer.css";
 import Image from "next/image";
-import Logo from "../../public/logo.svg";
-import Vector1 from "../../public/Vector1.svg";
+import Logo from "../../../public/logo.svg";
+import Vector1 from "../../../public/Vector1.svg";
 
 export default function Footer() {
   return (

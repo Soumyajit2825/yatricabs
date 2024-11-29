@@ -1,10 +1,10 @@
 "use client";
 
-import "../styles/hero.css";
-import HeroImg from "../../public/heroimg.svg";
+import "./hero.css";
+import HeroImg from "../../../public/heroimg.svg";
 import Image from "next/image";
-import BookingForm from "./Booking";
-import DownloadBanner from "./Download";
+import BookingForm from "../Booking/Booking";
+import DownloadBanner from "../Download/Download";
 
 const Hero = () => (
   <div className="hero">

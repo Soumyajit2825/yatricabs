@@ -1,5 +1,5 @@
 "use client";
-import "../styles/cars.css";
+import "./cars.css";
 
 const CarTable = () => {
   const carData = [

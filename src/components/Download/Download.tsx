@@ -2,9 +2,9 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import "../styles/download.css";
-import Google from "../../public/googleplay.svg";
-import Apple from "../../public/appstore.svg";
+import "./download.css";
+import Google from "../../../public/googleplay.svg";
+import Apple from "../../../public/appstore.svg";
 
 export default function DownloadBanner() {
   return (

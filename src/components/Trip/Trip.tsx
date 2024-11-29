@@ -1,5 +1,5 @@
 "use client";
-import "../styles/trip.css";
+import "./trip.css";
 
 export default function Trip() {
   return (

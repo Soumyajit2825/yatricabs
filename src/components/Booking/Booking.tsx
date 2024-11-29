@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { ArrowLeftRight } from "lucide-react";
-import "../styles/booking.css";
+import "./booking.css";
 
 export default function BookingForm() {
   const [serviceType, setServiceType] = useState("Outstation");

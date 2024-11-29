@@ -1,5 +1,5 @@
 "use client";
-import "../styles/frame.css";
+import "./frame.css";
 
 export default function frame() {
   return (

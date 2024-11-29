@@ -1,11 +1,11 @@
 "use client";
-import "../styles/why.css";
+import "./why.css";
 import Image from "next/image";
-import Car from "../../public/car.svg";
-import Vector from "../../public/Vector.svg";
-import People from "../../public/people.svg";
-import Order from "../../public/Order.svg";
-import Paid from "../../public/paid.svg";
+import Car from "../../../public/car.svg";
+import Vector from "../../../public/Vector.svg";
+import People from "../../../public/people.svg";
+import Order from "../../../public/Order.svg";
+import Paid from "../../../public/paid.svg";
 
 export default function Why() {
   return (

@@ -1,12 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import Logo from "../../public/logo.svg";
-import Contact from "../../public/contacts.svg";
+import Logo from "../../../public/logo.svg";
+import Contact from "../../../public/contacts.svg";
 import React from "react";
-import "../styles/navbar.css";
+import "./navbar.css";
 import { ProfileCircle } from "iconsax-react";
-import Arrow from "../../public/arrow.svg";
+import Arrow from "../../../public/arrow.svg";
 
 const Navbar = () => {
   return (

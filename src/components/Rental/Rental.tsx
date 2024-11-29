@@ -1,5 +1,5 @@
 "use client";
-import "../styles/rental.css";
+import "./rental.css";
 
 export default function Rental() {
   return (

@@ -1,7 +1,7 @@
 "use client";
 
 import CarCard from './Car';
-import '../styles/cars.css';
+import './cars.css';
 
 const CarSelection = () => {
   const carTypes = [

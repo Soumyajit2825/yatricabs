@@ -1,7 +1,7 @@
 "use client";
-import "../styles/journey.css";
+import "./journey.css";
 import Image from "next/image";
-import Journey1 from "../../public/journey.svg";
+import Journey1 from "../../../public/journey.svg";
 
 export default function Journey() {
   return (

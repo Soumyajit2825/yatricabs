@@ -1,9 +1,9 @@
 "use client";
-import "../styles/about.css";
+import "./about.css";
 import Image from "next/image";
-import Location from "../../public/location.svg";
-import Driving from "../../public/driving.svg";
-import Hand from "../../public/hand.svg";
+import Location from "../../../public/location.svg";
+import Driving from "../../../public/driving.svg";
+import Hand from "../../../public/hand.svg";
 
 export default function About() {
   return (
